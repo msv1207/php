@@ -1,0 +1,18 @@
+<?php
+echo "Give me a number:\n";
+$handle = fopen("php://stdin","r");
+$input = intval(fgets($handle));
+$handle = fopen("php://stdin","r");
+$bazz = intval(fgets($handle));
+$handle = fopen("php://stdin","r");
+$number = intval(fgets($handle));
+     for($i=1; $i<$number; $i++)
+    {
+    	echo $i, ' ';
+    	if($i % $input==0)
+    	 echo 'f';
+    	if($i % $bazz==0)
+    	 echo 'b' ;
+    	echo ' ';
+    }
+    
